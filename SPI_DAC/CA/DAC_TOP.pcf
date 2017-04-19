@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Mar 25 23:21:09 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "DAC_CS" LOCATE = SITE "N8" LEVEL 1;
+COMP "DAC_SCK" LOCATE = SITE "U16" LEVEL 1;
+COMP "DAC_MOSI" LOCATE = SITE "T4" LEVEL 1;
+COMP "DAC_CLR" LOCATE = SITE "P8" LEVEL 1;
+COMP "RST" LOCATE = SITE "L13" LEVEL 1;
+COMP "CLK" LOCATE = SITE "C9" LEVEL 1;
+NET "CLK_BUFGP/IBUFG" BEL "CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

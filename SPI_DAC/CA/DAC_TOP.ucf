@@ -1,0 +1,9 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "RST" LOC = L13;
+NET "CLK" LOC = C9;
+NET "DAC_CS" LOC = N8;
+NET "DAC_MOSI" LOC = T4;
+NET "DAC_SCK" LOC = U16;
+NET "DAC_CLR" LOC = P8;

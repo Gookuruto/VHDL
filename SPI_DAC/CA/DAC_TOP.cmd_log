@@ -1,0 +1,43 @@
+xst -intstyle ise -ifn "E:/Dropbox/Zajecia prowadzone/sem lato 2015/przetworniki AC, CA/Freq_constant/CA/DAC_TOP.xst" -ofn "E:/Dropbox/Zajecia prowadzone/sem lato 2015/przetworniki AC, CA/Freq_constant/CA/DAC_TOP.syr" 
+xst -intstyle ise -ifn "F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.xst" -ofn "F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DAC_TOP.ucf -p xc3s500e-fg320-4 DAC_TOP.ngc DAC_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DAC_TOP_map.ncd DAC_TOP.ngd DAC_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 DAC_TOP_map.ncd DAC_TOP.ncd DAC_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DAC_TOP.twx DAC_TOP.ncd -o DAC_TOP.twr DAC_TOP.pcf -ucf DAC_TOP.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DAC_TOP.ucf -p xc3s500e-fg320-4 DAC_TOP.ngc DAC_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DAC_TOP_map.ncd DAC_TOP.ngd DAC_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 DAC_TOP_map.ncd DAC_TOP.ncd DAC_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DAC_TOP.twx DAC_TOP.ncd -o DAC_TOP.twr DAC_TOP.pcf -ucf DAC_TOP.ucf 
+bitgen -intstyle ise -f DAC_TOP.ut DAC_TOP.ncd 
+xst -intstyle ise -ifn "F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.xst" -ofn "F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DAC_TOP.ucf -p xc3s500e-fg320-4 DAC_TOP.ngc DAC_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DAC_TOP_map.ncd DAC_TOP.ngd DAC_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 DAC_TOP_map.ncd DAC_TOP.ncd DAC_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DAC_TOP.twx DAC_TOP.ncd -o DAC_TOP.twr DAC_TOP.pcf -ucf DAC_TOP.ucf 
+bitgen -intstyle ise -f DAC_TOP.ut DAC_TOP.ncd 
+xst -intstyle ise -ifn "F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.xst" -ofn "F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DAC_TOP.ucf -p xc3s500e-fg320-4 DAC_TOP.ngc DAC_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DAC_TOP_map.ncd DAC_TOP.ngd DAC_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 DAC_TOP_map.ncd DAC_TOP.ncd DAC_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DAC_TOP.twx DAC_TOP.ncd -o DAC_TOP.twr DAC_TOP.pcf -ucf DAC_TOP.ucf 
+bitgen -intstyle ise -f DAC_TOP.ut DAC_TOP.ncd 
+xst -intstyle ise -ifn "F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.xst" -ofn "F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DAC_TOP.ucf -p xc3s500e-fg320-4 DAC_TOP.ngc DAC_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DAC_TOP_map.ncd DAC_TOP.ngd DAC_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 DAC_TOP_map.ncd DAC_TOP.ncd DAC_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DAC_TOP.twx DAC_TOP.ncd -o DAC_TOP.twr DAC_TOP.pcf -ucf DAC_TOP.ucf 
+bitgen -intstyle ise -f DAC_TOP.ut DAC_TOP.ncd 
+xst -intstyle ise -ifn "F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.xst" -ofn "F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.syr" 
+xst -intstyle ise -ifn "F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.xst" -ofn "F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.syr" 
+xst -intstyle ise -ifn "F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.xst" -ofn "F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DAC_TOP.ucf -p xc3s500e-fg320-4 DAC_TOP.ngc DAC_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DAC_TOP_map.ncd DAC_TOP.ngd DAC_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 DAC_TOP_map.ncd DAC_TOP.ncd DAC_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DAC_TOP.twx DAC_TOP.ncd -o DAC_TOP.twr DAC_TOP.pcf -ucf DAC_TOP.ucf 
+bitgen -intstyle ise -f DAC_TOP.ut DAC_TOP.ncd 
+xst -intstyle ise -ifn "F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.xst" -ofn "F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DAC_TOP.ucf -p xc3s500e-fg320-4 DAC_TOP.ngc DAC_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DAC_TOP_map.ncd DAC_TOP.ngd DAC_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 DAC_TOP_map.ncd DAC_TOP.ncd DAC_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DAC_TOP.twx DAC_TOP.ncd -o DAC_TOP.twr DAC_TOP.pcf -ucf DAC_TOP.ucf 
+bitgen -intstyle ise -f DAC_TOP.ut DAC_TOP.ncd 

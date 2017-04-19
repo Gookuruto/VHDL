@@ -1,0 +1,14 @@
+V3 9
+FL "E:/Dropbox/Zajecia prowadzone/sem lato 2015/przetworniki AC, CA/Freq_constant/CA/DAC_Control.vhd" 2015/03/25.22:10:52 P.20131013
+FL "E:/Dropbox/Zajecia prowadzone/sem lato 2015/przetworniki AC, CA/Freq_constant/CA/DAC_TOP.vhd" 2015/03/25.22:10:59 P.20131013
+FL F:/XilinxISEWeMiF/DKopiec/CA/DAC_Control.vhd 2015/03/25.23:20:52 P.20131013
+EN work/DAC_Control 1427322054 FL F:/XilinxISEWeMiF/DKopiec/CA/DAC_Control.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/DAC_Control/DAC_Control 1427322055 \
+      FL F:/XilinxISEWeMiF/DKopiec/CA/DAC_Control.vhd EN work/DAC_Control 1427322054
+FL F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.vhd 2015/03/25.23:20:48 P.20131013
+EN work/DAC_TOP 1427322056 FL F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/DAC_TOP/DAC 1427322057 \
+      FL F:/XilinxISEWeMiF/DKopiec/CA/DAC_TOP.vhd EN work/DAC_TOP 1427322056 \
+      CP DAC_Control
