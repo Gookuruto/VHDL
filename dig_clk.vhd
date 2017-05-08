@@ -42,6 +42,7 @@ signal licz : std_logic_vector(25 downto 0):="0000000000000000000000000";
 signal seconds : std_logic_vector(7 downto 0):="00000000";
 signal minutes : std_logic_vector(7 downto 0):="00000000";
 signal hours : std_logic_vector(7 downto 0):="00000000";
+signal days :std_logic_vector(7 downto 0):="00000000";
 --licz<="0000000000000000000000000";
 --seconds<="00000000";
 begin
@@ -83,7 +84,7 @@ begin
 	
 	hors:process(minutes)
 		begin
-			if(falling_edge(minutes(7))) then
+			if(falling_edge(minutes(6))) then
 				if(hours(3 downto 0)="1001")then
 				hours(7 downto 4)<=hours(7 downto 4)+1;
 				hours(3 downto 0) <= "0000";
@@ -95,6 +96,21 @@ begin
 			end if;
 			end if;
 		end process;
+		
+		
+	days:process(hours)
+		begin
+			if(falling_edge(hours(5))) then
+				if (days(3 downto 0) ="1001")then
+					days(7 downto 4) <=days(7 downto 4)+1;
+					days(3 downto 0) <=x"00";
+				else
+					days(3 downto 0) <= days(3 downto 0)+1;
+				end if;
+				--TODO warunek kiedy dni maja wracac do jedynki kiedy zmienia sie miesiac ? dodac
+				end if;
+				end process;
+				
 		 
 		 
 		dekoder:process(minutes,hours)
