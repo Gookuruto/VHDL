@@ -42,7 +42,10 @@ signal licz : std_logic_vector(25 downto 0):="0000000000000000000000000";
 signal seconds : std_logic_vector(7 downto 0):="00000000";
 signal minutes : std_logic_vector(7 downto 0):="00000000";
 signal hours : std_logic_vector(7 downto 0):="00000000";
-signal days :std_logic_vector(7 downto 0):="00000000";
+signal days :std_logic_vector(7 downto 0):="00000001";
+signal month :std_logic_vector(7 downto 0):="00000001";
+type dm is array(1 to 12) of std_logic_vector(7 downto 0);
+constant daysmax :dm:=(x"31",x"28",x"31",x"30",x"31",x"30",x"31",x"31",x"30",x"31",x"30",x"31"); 
 --licz<="0000000000000000000000000";
 --seconds<="00000000";
 begin
@@ -107,11 +110,28 @@ begin
 				else
 					days(3 downto 0) <= days(3 downto 0)+1;
 				end if;
+				if(days = daysmax(month)) then
+					days<=x"01";
+				end if;
 				--TODO warunek kiedy dni maja wracac do jedynki kiedy zmienia sie miesiac ? dodac
 				end if;
 				end process;
-				
+		-- TODO process do liczenia miesiecy		
 		 
+		 month:process(days)
+			begin
+					if(falling_edge(days(5)))then
+						if (months(3 downto 0) ="1001")then
+							months(7 downto 4) <=days(7 downto 4)+1;
+							months(3 downto 0) <=x"00";
+						else
+							months(3 downto 0) <= months(3 downto 0)+1;
+						end if;
+						if(months = x"12") then
+							months<=x"01";
+						end if;
+					end if;
+			end process;
 		 
 		dekoder:process(minutes,hours)
 			begin
